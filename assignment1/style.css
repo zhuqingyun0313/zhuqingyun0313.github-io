@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+#mainS{
+    background-color: rgb(59, 102, 88);
+    background-image: url(./img/flower.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+h1{
+    font-size: 10vh;
+    font-style: Serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 45vh;
+    margin-left: 10vh;
+}
+
+h2{
+    font-size: 5vh;
+    font-style: Serif;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    margin-top: 90vh;
+    margin-left: 50vh;
+}
+
+#s1{
+    background-color: #926e45;
+    background-image: url(./img/NGV-International-St-Kilda-Road-Melbourne.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#Re{
+    font-size: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
+}
+
+#W1{
+    background-color: #ff6c6c;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#Wone{
+    font-size: 5vh;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
+}
+
+.wbox{
+    text-align: left;
+    margin-top: 5vh;
+    margin: 5vh;
+    width:90%;
+    height: 90vh;
+    border: 1pt solid #000000;
+    padding: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#W2{
+    background-color: #195824d5;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#Word{
+    background-color: #ff9999d5;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#Sq{
+    width: 900pt;
+    text-align: center;
+    margin: auto;
+}
+
+#Ptwo{
+    background-color: #ffc085d5;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#Pfour{
+    background-color: #84a78cd5;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
