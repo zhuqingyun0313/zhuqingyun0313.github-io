@@ -1,0 +1,278 @@
+/* Padding for clear the original margins on the page */
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  /* first two colours come from Kuroi's Manga Pallete Palette */
+  /* https://lospec.com/palette-list/manga-pallete */
+  --col-01:#171219;
+  --col-02:#f2fbeb;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  --col-05:#a7f2ff;
+  --col-06:#407c61;
+  --col-07:#7070ff;
+  font-size: 16px;
+}
+
+/* navigate use absolute positioning.*/
+.nav{
+  display: flex;
+  width: 14rem;
+  height: 18rem;
+  background-color: var(--col-05);
+  position: fixed;
+  border-radius: 12px 12px 12px 12px;
+  /* Use location to hide */
+  left: -16rem;
+  top: 0;
+  overflow: hidden;
+  /* Add an animation */
+  transition: 0.5s;
+}
+
+.nav li{
+  font-size: 16px;
+  text-align: center;
+  line-height: 3rem;
+  width: 14rem;
+  height: 3rem;
+}
+
+.nav a{
+  color: var(--col-06);
+  display: block;
+  font-weight: bolder;
+  width: 14rem;
+  height: 3rem;
+  border-radius: 12px;
+}
+
+.nav a:hover{
+  background-color:darkgreen;
+  color: white;
+}
+
+#cb{
+  display: none;
+}
+
+#cb:checked ~ .nav{
+  left: 2rem;
+}
+
+label{
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: darkgreen;
+  display: inline-block;
+  line-height: 2rem;
+  cursor: pointer;
+  /* absolutely position */
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header button{
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#modeButton{
+  display: flex;
+  left: 80%;
+  width: 110px;
+  height: 40px;
+  font-size: 15px;
+  border: none;
+  background-color: #5170c7;
+  color: white;
+  position: relative;
+  border-radius: 12px;
+  outline: none;
+  /* Mouse over button becomes hand */
+  cursor: pointer;
+  /* The animation transition */
+  transition: 0.3s;
+}
+
+#modeButton:hover{
+  /* Rotate it 15 degrees along the X-axis */
+  transform: rotateX(40deg);
+  /* shadow */
+  box-shadow: 0 15px 15px #27518f;
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+}
+
+main{
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 1.5rem;
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+  margin-left: 5%;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+}
+
+li{
+  font-size: 1rem;
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  main{
+    line-height: 1.7rem;
+  }
+
+  .nav{
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .nav li{
+    font-size: 15px;
+    text-align: center;
+    line-height: 2rem;
+    width: 10rem;
+    height: 2rem;
+    margin: 0 auto;
+  }
+
+  .nav a{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 12px;
+  }
+
+  #modeButton{
+    display: flex;
+    left: 80%;
+    width: 110px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 23px;
+  }
+
+  main{
+    line-height: 1.6rem;
+  }
+
+  .nav{
+    width: 14rem;
+    height: 12rem;
+    font-size: 10px;
+  }
+
+  .nav li{
+    width: 14rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2rem;
+  }
+
+  .nav a{
+    width: 14rem;
+    height: 2rem;
+    border-radius: 12px;
+  }
+
+  #modeButton{
+    display: flex;
+    left: 90%;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+}
+
