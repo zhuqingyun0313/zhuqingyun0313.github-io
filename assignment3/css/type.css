@@ -1,0 +1,148 @@
+body {
+    background-color: #442302;
+}
+  
+a {
+  text-decoration: none;
+  color: #000;
+}
+  
+li {
+  list-style: none;
+}
+  
+@font-face{
+  font-family: "LucidaCalligraphy";
+  src: url(font/LucidaCalligraphy.ttf);
+}
+  
+h1 {
+  text-align: center;
+  font-family: "LucidaCalligraphy";
+}
+  
+.main {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #eddcca;
+}
+
+  input,
+  button,
+  textarea {
+  border: 0;
+  outline: none;
+}
+  
+img {
+  width: 100%;
+}
+  
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  
+.logo {
+  width: 300px;
+  margin: 0 auto;
+}
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar li a {
+    font-size: 20px;
+    color: #442302;
+    padding: 4px 20px;
+  }
+  
+  .navbar li a:hover {
+    background-color: #442302;
+    color: #fff;
+  }
+  
+  .navbar li a.active {
+    background-color: #442302;
+    color: #fff;
+  }
+  
+  .bigtitle {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .bigtitle .line {
+    width: 100px;
+    height: 2px;
+    background-color: #999;
+    margin-top: 15px;
+  }
+  
+  .bigtitle h2 {
+    font-size: 32px;
+    margin: 0 20px;
+  }
+  
+  .zhonglei {
+    padding: 50px;
+  }
+  
+.zhonglei .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.zhonglei .list li {
+  width: 32%;
+  margin-bottom: 20px;
+}
+  
+.zhonglei .list li .image {
+  position: relative;
+  height: 192px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+  
+.zhonglei .list li .image img {
+  height: 100%;
+  display: block;
+  transition: 0.5s;
+}
+  
+.zhonglei .list li .image img:hover {
+  transform: scale(1.1);
+}
+  
+.zhonglei .list li .image .text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+  
+.zhonglei .list li .image .text .title {
+  font-size: 18px;
+}
+  
+.zhonglei .list li .image .text .en {
+  font-size: 14px;
+}
+  
